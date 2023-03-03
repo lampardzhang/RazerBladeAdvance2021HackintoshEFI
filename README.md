@@ -33,6 +33,8 @@ hdmi        无法使用
 typec显示    无法使用    
 airdrop     无法使用（很有意思的是，如果你是安卓手机，可以google play安装anddrop软件， 但手机和笔记本在同一局域网内，就可以实现和白苹果一摸一样的airdrop功能了，实在是让人无语）      
 随航         无法使用（可能是apple id问题，我的白苹果+iPad 同样无法使用） 
+屏幕亮度自动响应  无法使用， 不过这个我在windows也无法使用， 硬件就不支持  
+屏幕亮度记录功能  无法使用   手动调节屏幕亮度之后，休眠之后屏幕亮度又变回默认值（70%）  
 
 **使用小tips** 
 1. 如何双屏显示  
@@ -51,8 +53,26 @@ Complex Modifications 中下载网上别人写好的脚本，如下3个
 在触摸板设置中并没有打开该功能的开关，需要在 "辅助功能"-"指针控制" 中启用  
 5. 链接windows 虚拟机后键位不对如何解决  
 使用Karabiner-elements替换了键盘键位之后，如果使用微软的"Remote Desktop" 链接到windows虚拟机  
-会发现在windows 虚拟机中键位就错乱了。 使用Hammerspoon 写了一个自动切换脚本， 判断如果当前是Remote Desktop 程序被激活 就不让 Karabiner-elements 切换键位  
-6. 
+会发现在windows 虚拟机中键位就错乱了。 使用"Hammerspoon"写了一个自动切换脚本， 判断如果当前是Remote Desktop 程序被激活 就不让 Karabiner-elements 切换键位  
+6. 屏幕亮度记录功能实现  
+同样使用Hammerspoon 写脚本，记录休眠前的屏幕亮度， 唤醒后 set 屏幕亮度为前面记录值
+   ``local lastBrightness
+   function systemWakeUpCallback(eventType)
+   if(eventType==hs.caffeinate.watcher.screensDidWake) then
+   print("system previous brightness is "..(lastBrightness))
+   hs.brightness.set(lastBrightness)
+   end
+   if(eventType==hs.caffeinate.watcher.screensDidSleep) then
+   lastBrightness = hs.brightness.get()
+   print("set previous brightness is "..(lastBrightness))
+   end
+   end
+
+
+wakeUpWatcher = hs.caffeinate.watcher.new(systemWakeUpCallback)
+wakeUpWatcher:start()
+``
+#
 
 
 
