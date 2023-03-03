@@ -54,22 +54,23 @@ Complex Modifications 中下载网上别人写好的脚本，如下3个
 5. 链接windows 虚拟机后键位不对如何解决  
 使用Karabiner-elements替换了键盘键位之后，如果使用微软的"Remote Desktop" 链接到windows虚拟机  
 会发现在windows 虚拟机中键位就错乱了。 使用"Hammerspoon"写了一个自动切换脚本， 判断如果当前是Remote Desktop 程序被激活 就不让 Karabiner-elements 切换键位  
-6. 屏幕亮度记录功能实现  
-同样使用Hammerspoon 写脚本，记录休眠前的屏幕亮度， 唤醒后 set 屏幕亮度为前面记录值  
-`  local lastBrightness
-   function systemWakeUpCallback(eventType)
-   if(eventType==hs.caffeinate.watcher.screensDidWake) then
-   print("system previous brightness is "..(lastBrightness))
-   hs.brightness.set(lastBrightness)
-   end
-   if(eventType==hs.caffeinate.watcher.screensDidSleep) then
-   lastBrightness = hs.brightness.get()
-   print("set previous brightness is "..(lastBrightness))
-   end
-   end
-   wakeUpWatcher = hs.caffeinate.watcher.new(systemWakeUpCallback)
-   wakeUpWatcher:start()
-   `   
+   6. 屏幕亮度记录功能实现  
+   同样使用Hammerspoon 写脚本，记录休眠前的屏幕亮度， 唤醒后 set 屏幕亮度为前面记录值  
+   ```
+   local lastBrightness  
+      function systemWakeUpCallback(eventType)  
+         if(eventType==hs.caffeinate.watcher.screensDidWake) then  
+            print("system previous brightness is "..(lastBrightness))  
+            hs.brightness.set(lastBrightness)  
+         end
+         if(eventType==hs.caffeinate.watcher.screensDidSleep) then  
+            lastBrightness = hs.brightness.get()  
+            print("set previous brightness is "..(lastBrightness))  
+         end  
+      end  
+      wakeUpWatcher = hs.caffeinate.watcher.new(systemWakeUpCallback)  
+      wakeUpWatcher:start()  
+   ```   
 
 #
 
