@@ -19,19 +19,19 @@ wifi   正常
 触摸板  正常  
 usb    正常
 显示    正常（安装betterDisplay 出发hidpi)
-usb    正常  
-CPU睿频 正常  
-耳机    正常  
-音响    正常  
-休眠    正常    
-typec 充电 正常  
-接力    正常  
+usb    正常    
+CPU睿频 正常    
+耳机    正常    
+音响    正常    
+休眠    正常      
+typec 充电 正常    
+接力    正常    
 
 **无法使用功能**  
-独立显卡      无法使用  
-hdmi        无法使用  
-typec显示    无法使用  
-airdrop     无法使用
+独立显卡      无法使用    
+hdmi        无法使用    
+typec显示    无法使用    
+airdrop     无法使用  
 随航         无法使用（可能是apple id问题，我的白苹果+iPad 同样无法使用）  
 
 
