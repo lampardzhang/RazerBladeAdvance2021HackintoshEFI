@@ -32,7 +32,29 @@ typec 充电 正常
 hdmi        无法使用    
 typec显示    无法使用    
 airdrop     无法使用  
-随航         无法使用（可能是apple id问题，我的白苹果+iPad 同样无法使用）  
+随航         无法使用（可能是apple id问题，我的白苹果+iPad 同样无法使用） 
+
+**使用小tips** 
+1. 如何双屏显示  
+购买一个支持displaylink协议的拓展坞，我在咸鱼购买的hp traval dock（200元）  
+macos 安装DisplayLink 软件 即可实现链接外部显示器
+2. 键盘键位不适应怎么办？   
+安装Karabiner-elements  
+Simple Modifications 中 将left control 和left command 键位功能互换  
+Complex Modifications 中下载网上别人写好的脚本，如下3个  
+   - Change Command+tab to control+tab (实现alt+tab 切换app功能)  
+   - Bind Option+tab to command+tab (实现control+tab 同一app切换标签页功能)  
+   - Use left shift to change to/from English input (点击shift 切换自带输入法 中英文输入)  
+3. 鼠标不好用怎么办？  
+安装Mac Mouse fix 软件， 实现浏览网页平滑滚动，同时可以自定义鼠标其他按键功能，十分好用  
+4. 别忘记打开3指拖拽功能    
+在触摸板设置中并没有打开该功能的开关，需要在 "辅助功能"-"指针控制" 中启用  
+
+
+
+
+
+
 
 
 
