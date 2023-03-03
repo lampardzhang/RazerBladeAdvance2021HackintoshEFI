@@ -18,14 +18,16 @@ wifi   正常
 蓝牙    正常  
 触摸板  正常  
 usb    正常
-显示    正常（安装betterDisplay 出发hidpi)
+显示    正常（安装betterDisplay 触发hidpi)
 usb    正常    
 CPU睿频 正常    
 耳机    正常    
 音响    正常    
 休眠    正常      
 typec 充电 正常    
-接力    正常    
+接力    正常 
+电池    正常充放电，大概可以使用4小时多一点， 比windows使用时间少了2个小时左右
+不知道原因
 
 **无法使用功能**  
 独立显卡      无法使用    
@@ -74,7 +76,6 @@ function switchKarabinerElementsProfile(name)
       name
   ))
 end
-
 
 function applicationWatcher(appName, eventType, appObject)
     print("appName is  "..(appName))
