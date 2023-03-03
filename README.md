@@ -54,8 +54,47 @@ Complex Modifications 中下载网上别人写好的脚本，如下3个
 5. 链接windows 虚拟机后键位不对如何解决  
 使用Karabiner-elements替换了键盘键位之后，如果使用微软的"Remote Desktop" 链接到windows虚拟机  
 会发现在windows 虚拟机中键位就错乱了。 使用"Hammerspoon"写了一个自动切换脚本， 判断如果当前是Remote Desktop 程序被激活 就不让 Karabiner-elements 切换键位  
-   6. 屏幕亮度记录功能实现  
-   同样使用Hammerspoon 写脚本，记录休眠前的屏幕亮度， 唤醒后 set 屏幕亮度为前面记录值  
+```
+if hs.fs.attributes("Spoons/Knu.spoon") == nil then
+  hs.execute("mkdir -p Spoons; curl -L https://github.com/knu/Knu.Spoon/raw/release/Spoons/Knu.spoon.zip | tar xf - -C Spoons/")
+end
+knu = require("knu")
+-- Function to guard a given object from GC
+guard = knu.runtime.guard
+
+-- Enable auto-restart when any of the *.lua files under ~/.hammerspoon/ is modified
+knu.runtime.autorestart(true)
+
+-- Switch between Karabiner-Elements profiles by keyboard
+
+function switchKarabinerElementsProfile(name)
+  hs.execute(knu.utils.shelljoin(
+      "/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli",
+      "--select-profile",
+      name
+  ))
+end
+
+
+function applicationWatcher(appName, eventType, appObject)
+    print("appName is  "..(appName))
+    print("eventType is  "..(eventType))
+    if (eventType == hs.application.watcher.activated) then
+        if (appName == "Microsoft Remote Desktop") then
+            switchKarabinerElementsProfile("R")
+        end
+    end
+    if (eventType == hs.application.watcher.deactivated) then
+        if (appName == "Microsoft Remote Desktop") then
+            switchKarabinerElementsProfile("N")
+        end
+    end
+end
+appWatcher = hs.application.watcher.new(applicationWatcher)
+appWatcher:start()
+```
+6. 屏幕亮度记录功能实现  
+同样使用Hammerspoon 写脚本，记录休眠前的屏幕亮度， 唤醒后 set 屏幕亮度为前面记录值  
    ```
    local lastBrightness  
       function systemWakeUpCallback(eventType)  
