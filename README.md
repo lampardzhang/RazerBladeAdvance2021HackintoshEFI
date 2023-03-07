@@ -5,7 +5,13 @@ CPU：i7 10875H
 WI-FI：AX201 网卡  
 显卡：RTX3080 8G  
 内存：64G DDR4 3200  
-显示器：1080P 300赫兹刷新率  
+显示器：1080P 300赫兹刷新率    
+
+**下图为具体版本信息**   
+
+![](https://raw.githubusercontent.com/lampardzhang/imagesForUpgit/master/2023/03/upgit_20230307_1678183502.png)
+
+
 
 **OpenCore 版本**  
 0.6.4     
@@ -44,9 +50,9 @@ airdrop     无法使用（很有意思的是，如果你是安卓手机，可�
 购买一个支持displaylink协议的拓展坞，我在咸鱼购买的hp traval dock（200元）  
 macos 安装DisplayLink 软件 即可实现链接外部显示器
 2. 键盘键位不适应怎么办？   
-安装Karabiner-elements  
-Simple Modifications 中 将left control 和left command 键位功能互换  
-Complex Modifications 中下载网上别人写好的脚本，如下3个  
+   安装Karabiner-elements  
+   Simple Modifications 中 将left control 和left command 键位功能互换  
+   Complex Modifications 中下载网上别人写好的脚本，如下3个  
    - Change Command+tab to control+tab (实现alt+tab 切换app功能)  
    - Bind Option+tab to command+tab (实现control+tab 同一app切换标签页功能)  
    - Use left shift to change to/from English input (点击shift 切换自带输入法 中英文输入)  
@@ -96,7 +102,7 @@ appWatcher = hs.application.watcher.new(applicationWatcher)
 appWatcher:start()
 ```
 6. 屏幕亮度记录功能实现  
-同样使用Hammerspoon 写脚本，记录休眠前的屏幕亮度， 唤醒后 set 屏幕亮度为前面记录值  
+   同样使用Hammerspoon 写脚本，记录休眠前的屏幕亮度， 唤醒后 set 屏幕亮度为前面记录值  
    ```
    local lastBrightness  
       function systemWakeUpCallback(eventType)  
@@ -111,13 +117,13 @@ appWatcher:start()
       end  
       wakeUpWatcher = hs.caffeinate.watcher.new(systemWakeUpCallback)  
       wakeUpWatcher:start()  
-   ```   
+   ```
 
 
 
 
 
-[链接]: baidu.com
+
 
 
 
