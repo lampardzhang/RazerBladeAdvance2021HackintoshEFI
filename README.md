@@ -8,7 +8,8 @@ WI-FI：AX201 网卡
 显示器：1080P 300赫兹刷新率  
 
 **OpenCore 版本**  
-0.6.4  
+0.6.4     
+
 
 **Mac OS 版本**  
 Mac Monterey
