@@ -1,7 +1,7 @@
 # RazerBladeAdvance2021HackintoshEFI
   
 
-[TOC]
+
 
 **硬件配置**  
 CPU：i7 10875H  
@@ -123,10 +123,12 @@ appWatcher:start()
       wakeUpWatcher = hs.caffeinate.watcher.new(systemWakeUpCallback)  
       wakeUpWatcher:start()  
    ```
-
-7.  其余代办:    
-
-   7.1. 为了测试sidebar功能, 需要换一个无线网卡
+   
+   7. 其余代办:        
+   
+      1. 为了测试sidebar功能, 需要换一个无线网卡. 
+   
+   		
 
 
 
