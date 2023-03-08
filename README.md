@@ -132,7 +132,8 @@ appWatcher:start()
       
          ![](https://raw.githubusercontent.com/lampardzhang/imagesForUpgit/master/2023/03/upgit_20230308_1678268922.jpg)
       
-      3. 
+      3. 测试修改host 提交是否ok  
+         4. 
 
    		
 
