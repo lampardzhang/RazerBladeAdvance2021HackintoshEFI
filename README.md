@@ -124,17 +124,14 @@ appWatcher:start()
       wakeUpWatcher:start()  
    ```
    
-7. 其余代办:        
+7. 其余待办:        
    
-      1. 为了测试sidebar功能, 需要换一个无线网卡.   
+      1. 为了测试sidebar功能, 需要换一个无线网卡.  
+   2. 目前修改host 内容为如下：  
+      140.82.114.3.   github.com  
+      185.199.108.153	assets-cdn.github.com  
+      151.101.1.194   github.global.ssl.fastly.net  
       
-      2. 一个测试。
-      
-         ![](https://raw.githubusercontent.com/lampardzhang/imagesForUpgit/master/2023/03/upgit_20230308_1678268922.jpg)
-      
-      3. 测试修改host 提交是否ok  
-         4. 
-
    		
 
 
