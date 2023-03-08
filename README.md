@@ -130,7 +130,8 @@ appWatcher:start()
    2. 目前修改host 内容为如下：  
       140.82.114.3   github.com  
       185.199.108.153	assets-cdn.github.com  
-      151.101.1.194   github.global.ssl.fastly.net  
+      151.101.1.194   github.global.ssl.fastly.net   
+   3. 
       
    		
 
