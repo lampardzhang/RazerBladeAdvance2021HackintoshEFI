@@ -103,6 +103,7 @@ appWatcher:start()
 ```
 6. 屏幕亮度记录功能实现  
    同样使用Hammerspoon 写脚本，记录休眠前的屏幕亮度， 唤醒后 set 屏幕亮度为前面记录值  
+   
    ```
    local lastBrightness  
       function systemWakeUpCallback(eventType)  
@@ -119,7 +120,9 @@ appWatcher:start()
       wakeUpWatcher:start()  
    ```
 
+7.  其余代办:    
 
+   7.1. 为了测试sidebar功能, 需要换一个无线网卡
 
 
 
