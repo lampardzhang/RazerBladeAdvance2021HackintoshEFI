@@ -1,5 +1,5 @@
 # RazerBladeAdvance2021HackintoshEFI
-  
+
 
 
 
@@ -124,10 +124,16 @@ appWatcher:start()
       wakeUpWatcher:start()  
    ```
    
-   7. 其余代办:        
+7. 其余代办:        
    
-      1. 为了测试sidebar功能, 需要换一个无线网卡. 
-   
+      1. 为了测试sidebar功能, 需要换一个无线网卡.   
+      
+      2. 一个测试。
+      
+         ![](https://raw.githubusercontent.com/lampardzhang/imagesForUpgit/master/2023/03/upgit_20230308_1678268922.jpg)
+      
+      3. 
+
    		
 
 
