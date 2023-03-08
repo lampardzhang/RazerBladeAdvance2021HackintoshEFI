@@ -1,4 +1,8 @@
 # RazerBladeAdvance2021HackintoshEFI
+  
+
+[TOC]
+
 **硬件配置**  
 CPU：i7 10875H  
 硬盘：WD SN750 2T  
