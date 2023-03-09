@@ -126,16 +126,8 @@ appWatcher:start()
 7. 其余待办:        
    
       1. 为了测试sidebar功能, 需要换一个无线网卡.  
-   2. 目前修改host 内容为如下：  
-      140.82.113.3    github.com  
-      185.199.108.153 assets-cdn.github.com  
-      199.232.69.194  github.global.ssl.fastly.net     
-   3. 使用 
-   ```
-      dscacheutil -flushcache
-   ``` 
-   
-   目前通过开clash Pro 增强模式来解决github 访问过慢的问题。     
+
+      2. 目前通过开clash Pro 增强模式来解决github 访问过慢的问题。     
    
 
 
