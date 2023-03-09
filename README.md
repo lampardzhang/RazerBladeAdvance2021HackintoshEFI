@@ -129,7 +129,7 @@ appWatcher:start()
 
       2. 目前通过开clash Pro 增强模式来解决github 访问过慢的问题。     
    
-
+      3. 不知道是否可以升级到最新的macos 14
 
 
 
