@@ -133,7 +133,9 @@ appWatcher:start()
    3. 使用 
    ```
       dscacheutil -flushcache
-   ```   
+   ``` 
+   
+   目前通过开clash Pro 增强模式来解决github 访问过慢的问题。     
    
 
 
