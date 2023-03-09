@@ -138,9 +138,6 @@ appWatcher:start()
 
 
 
-![截屏2023-03-09 16.27.49](https://raw.githubusercontent.com/lampardzhang/imagesForUpgit/master/2023/03/upgit_20230309_1678350492.png)
-
-
 
 
 
