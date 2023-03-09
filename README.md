@@ -133,7 +133,7 @@ appWatcher:start()
    3. 使用 
    ```
       dscacheutil -flushcache
-   ```
+   ```   
    
 
 
