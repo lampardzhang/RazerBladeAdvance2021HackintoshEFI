@@ -2,7 +2,6 @@
 
 
 
-
 **硬件配置**  
 CPU：i7 10875H  
 硬盘：WD SN750 2T  
@@ -135,11 +134,11 @@ appWatcher:start()
    ```
       dscacheutil -flushcache
    ```
-   		
+   
 
 
 
-
+![截屏2023-03-09 16.27.49](https://raw.githubusercontent.com/lampardzhang/imagesForUpgit/master/2023/03/upgit_20230309_1678350492.png)
 
 
 
